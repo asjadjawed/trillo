@@ -1,0 +1,29 @@
+.container {
+  max-width: 120rem;
+  // margin on child of body adds to height of body
+  // use body padding instead
+  margin: 0 auto;
+  background: var(--color-grey-light-1);
+  box-shadow: var(--shadow-dark);
+
+  min-height: 50rem;
+}
+.header {
+  height: 7rem;
+  background: #fff;
+  // this is wrong setting for border missing thickness / style
+  border-bottom: var(--color-grey-light-2);
+}
+.content {
+  display: flex;
+}
+
+.sidebar {
+  background: var(--color-grey-dark-1);
+  flex: 0 0 18%;
+}
+
+.hotel-view {
+  background: #fff;
+  flex: 1;
+}
