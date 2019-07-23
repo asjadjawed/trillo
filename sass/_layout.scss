@@ -9,10 +9,15 @@
   min-height: 50rem;
 }
 .header {
+  font-size: 1.4rem;
   height: 7rem;
   background: #fff;
   // this is wrong setting for border missing thickness / style
   border-bottom: var(--color-grey-light-2);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .content {
   display: flex;
