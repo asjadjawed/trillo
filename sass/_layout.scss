@@ -1,12 +1,16 @@
 .container {
   max-width: 120rem;
-  // margin on child of body adds to height of body
+  // margin on direct child of body adds to height of body
   // use body padding instead
   margin: 0 auto;
   background: var(--color-grey-light-1);
   box-shadow: var(--shadow-dark);
 
   min-height: 50rem;
+
+  @media only screen and (max-width: 1200/16 * 1em) {
+    max-width: none;
+  }
 }
 
 .header {
@@ -21,6 +25,10 @@
 }
 .content {
   display: flex;
+
+  @media only screen and (max-width: 900/16 * 1em) {
+    flex-direction: column;
+  }
 }
 
 .sidebar {
@@ -42,6 +50,10 @@
   padding: 4.5rem;
   background-color: var(--color-grey-light-1);
   border-bottom: var(--line);
+
+  @media only screen and (max-width: 900/16 * 1em) {
+    padding: 3rem;
+  }
 }
 
 .description {
@@ -50,6 +62,11 @@
   padding: 3rem;
   flex: 0 0 60%;
   margin-right: 4.5rem;
+
+  @media only screen and (max-width: 900/16 * 1em) {
+    padding: 2rem;
+    margin-right: 3rem;
+  }
 }
 
 .user-reviews {
